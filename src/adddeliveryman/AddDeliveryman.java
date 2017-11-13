@@ -79,21 +79,14 @@ public class AddDeliveryman {
         System.out.println("Enter the Password:");
         d.setd_password(reader.nextLine());
         
-        
+        System.out.println("You have added:");
+        System.out.println("Name:"+d.getd_name()+",Ic NUmber:"+d.getd_IcNo()+",Phone Number:"+d.getd_PNo()+",Satus:"+d.getd_status()+", Gender:"+d.getd_gender()+",User Name:"+d.getd_userName()+", Password:"+d.getd_password());
         System.out.println("Do yo want to add others new Deliveryman? (Yes to continue No show all the deliveryman)");
         select = reader.nextLine().toUpperCase();
         
         
         //List<Deliveryman> addman= new ArrayList<>();
         addman.add(d);
-        
-        System.out.println("===============");
-        System.out.println("= Deliveryman =");
-        System.out.println("===============");
-        for(int i=0;i < addman.size();++i)
-        {
-              System.out.println(1+i +"."+addman.get(i));
-        }
         
         }while(select.equals("YES"));
                  {
